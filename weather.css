@@ -1,0 +1,13 @@
+body{
+    background-color: blue;
+}
+
+#title{
+    color: black;
+    font-size: 4em;
+}
+
+.fa-sun-o{
+    color:white;
+    font-size: 4em;
+}
