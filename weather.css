@@ -3,11 +3,15 @@ body{
 }
 
 #title{
-    color: black;
+    color: white;
     font-size: 4em;
 }
 
 .fa-sun-o{
-    color:white;
+    color: white;
     font-size: 4em;
+}
+
+p{
+     color: black;
 }
