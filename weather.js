@@ -4,6 +4,16 @@
     global navigator
 */
 
+    var header = document.createElement("H1");
+        header.setAttribute("id", "title");
+        header.setAttribute("style", "color: whtie");
+        header.innerHTML = "Local Weather App";
+    var sun = document.createElement("I");
+        sun.setAttribute("class", "fa fa-sun-o");
+        sun.setAttribute("aria-hidden", "true");
+        document.getElementById("header").appendChild(header);
+        document.getElementById("header").appendChild(sun);
+
 $(document).ready(function(){
      var long;
      var lat;
@@ -14,25 +24,17 @@ $(document).ready(function(){
              long = position.coords.longitude;
             $("#weatherDetails").html("latitude: " + lat + "<br>longitude: " + long);
 
-        });
-
-    }
-    var api = "http://api.openweathermap.org/data/2.5/weather?id=2172797&appid=43554e9551b1521266276edbd5d60132";
+    var api = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid="+APIKEY;
 
 
     $.getJSON(api, function(data){
- });
+         var city = data.name;
+         console.log(city);
+        
+    });
 
-    var header = document.createElement("H1");
-        header.setAttribute("id", "title");
-        header.setAttribute("style", "color: whtie");
-        header.innerHTML = "Local Weather App";
-    var sun = document.createElement("I");
-        sun.setAttribute("class", "fa fa-sun-o");
-        sun.setAttribute("aria-hidden", "true");
-    document.getElementById("header").appendChild(header);
-    document.getElementById("header").appendChild(sun);
+    });
 
-
+    }
 
 });
