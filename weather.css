@@ -15,3 +15,8 @@ body{
 p{
      color: black;
 }
+
+#weatherDetails{
+    color: white;
+    font-size: 1em;
+}
