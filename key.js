@@ -1,1 +1,0 @@
-var APIKEY = "&appid=43554e9551b1521266276edbd5d60132";
