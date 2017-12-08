@@ -1,3 +1,8 @@
+body{
+    background: no-repeat center center ;
+
+}
+
 .displayWeather{
     background-color: #428bca;
     border-radius: 10px;
