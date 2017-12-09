@@ -20,13 +20,13 @@
             <ul class='nav navbar-nav navbar-right'>
                 <li>
                     <a href='#'id='tempSwitch' style="color: white">
-                        <i class="fa fa-cloud" aria-hidden="true" style="color: white"></i>
+                        <i class="fas fa-cloud"></i>
                         &#8457; / &#8451;
                     </a>
                 </li>
                 <li>
                     <a href='https://github.com/JCarlos831' style="color: white">
-                        <i class="fa fa-github" aria-hidden="true" style="color: white"></i>
+                        <i class="fab fa-github"></i>
                         Checkout my Github
                     </a>
                 </li>
@@ -43,19 +43,20 @@
                 </span>
             </h1>
             <h1 class='text-center'>
+                <span id='weatherIcon'>
+                    ...
+                </span>
+            </h1>
+            <h1 class='text-center'>
                 <span id='weatherType'>
                     ...
                 </span>
             </h1>
             <br>
-                Country Name: <span id='country'>...</span>
+            <div id='geo' class='text-center'>
+                location: <span id='location'>...</span>
+            </div>
             <br>
-                City: <span id='city'>...</span>
-            <!--<br>-->
-            <!--    Latitude: <span id='latitude'>...</span>-->
-            <!--<br>-->
-            <!--    Longitude: <span id='longitude'>...</span>-->
-            <!--<br>-->
         </div>
         <div class='space'>
             
@@ -67,7 +68,7 @@
     
     <!--fontawesome-->
     <script 
-    src="https://use.fontawesome.com/265835e2c8.js">
+        defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js">
     </script>
     <!--jQuery-->
     <script
