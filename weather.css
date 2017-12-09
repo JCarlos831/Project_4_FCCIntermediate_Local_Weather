@@ -1,19 +1,18 @@
-body{
-    background: no-repeat center center ;
-
+.displayWeather {
+	background-color: #428bca;
+	border-radius: 10px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: .75;
+	width: 50vw;
+	padding-bottom: 1vh;
 }
 
-.displayWeather{
-    background-color: #428bca;
-    border-radius: 10px;
+.space {
+	padding: 5vh;
+}
+
+#radioBtns{
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: .75;
-    width: 50vw;
 }
-
-.space{
-    padding: 5vh;
-}
-
