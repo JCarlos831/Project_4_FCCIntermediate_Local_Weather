@@ -5,23 +5,24 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link href="weather.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-GIcXw8rYyx4xrVfccSt7E7KGw2nAFDG/TNLq9NMPHKH5Rv3aqk6laThLgQFQnIYF" crossorigin="anonymous">	<link href="weather.css" rel="stylesheet" type="text/css">
 
 	<title>Local Weather</title>
 </head>
 
 <body>
 	<div class='container-fluid'>
-		<nav class='navbar navbar-dark container'>
-			<div class='navbar-header'>
-				<div class='navbar-brand'>
-					Local Weather App
-				</div>
-			</div>
-			<ul class='nav navbar-nav navbar-right'>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <a class="navbar-brand" href="#">Local Weather App</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarColor01">
+		  </div>
+  			<ul class='nav navbar-nav navbar-right'>
 				<li>
-					<a href='https://github.com/JCarlos831' style='color:black; font-size:1em'><i class="fab fa-github"></i> Checkout my Github</a>
+					<a href='https://github.com/JCarlos831' style="color:white"><i class="fab fa-github"></i> Checkout my Github</a>
 				</li>
 			</ul>
 		</nav>
@@ -34,7 +35,8 @@
 			<h1 class='text-center'><span id='temp'></span>
 			</h1>
 			<div class='text-center'>
-			<button id='switch'>&#8457/&#8451</button>
+			<button type="button" class="btn btn-primary" id="switch">&#8457/&#8451</button>
+
 			</div>
 			<h1 class='text-center'><span id='weatherIcon'></span>
 			</h1>

@@ -30,6 +30,8 @@ $(function(){
 				navigator.geolocation.getCurrentPosition(function(position) {
 					var lat = position.coords.latitude;
 					var long = position.coords.longitude;
+					var accuracy =position.coords.accuracy;
+					console.log(accuracy);
 
 			$.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&units=imperial'+APIKEY, function(data){
 				$('#location').html('Current weather in ' + '<br>' +data.name+ '<br>'+ 'is')
