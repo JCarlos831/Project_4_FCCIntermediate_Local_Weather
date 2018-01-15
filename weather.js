@@ -33,7 +33,7 @@ $(function(){
 					var accuracy =position.coords.accuracy;
 					console.log(accuracy);
 
-			$.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&units=imperial'+APIKEY, function(data){
+			$.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&units=imperial'+ '&appid=' + APIKEY, function(data){
 				$('#location').html('Current weather in ' + '<br>' +data.name+ '<br>'+ 'is')
 				$('#windSpeed').html('The current wind speed is ' + Math.round(data.wind.speed) + ' mph');
 
